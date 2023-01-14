@@ -1,0 +1,85 @@
+.filters {
+  grid-row: 1/4;
+  background: #ffffff;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding-bottom: 10px;
+  align-self: start;
+  margin-top: 40px;
+
+  div {
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-size: 12px;
+    line-height: 12px;
+
+    padding: 20px;
+
+    @media (max-width: 665px) {
+      padding: 10px 0 0 20px;
+    }
+    @media (max-width: 372px) {
+      font-size: 10px;
+    }
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0 0 20px 0;
+    margin: 0;
+
+    li {
+      font-size: 13px;
+      line-height: 20px;
+      color: #4a4a4a;
+      padding: 10px 0 10px 20px;
+      display: flex;
+      align-items: center;
+
+      .checkbox-input {
+        position: absolute;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+      }
+      .checkbox-input:checked + .check-box {
+        background: url('../../img/check-on.svg');
+      }
+      .check-box {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        margin-left: -30px;
+
+        background-image: url('../../img/check-off.svg');
+        background-repeat: no-repeat;
+      }
+      .checkbox-label {
+        padding-left: 30px;
+      }
+      @media (max-width: 372px) {
+        padding: 5px 0 5px 20px;
+      }
+    }
+
+    :hover {
+      background-color: #f1fcff;
+      cursor: pointer;
+      transition: background-color 0.5s;
+    }
+    @media (max-width: 665px) {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0;
+      margin-bottom: 10px;
+      :hover {
+        background-color: #ffffff;
+      }
+    }
+  }
+
+  @media (max-width: 665px) {
+    margin-right: 0px;
+  }
+}

@@ -1,0 +1,21 @@
+.flight_list {
+  display: grid;
+  grid-template-columns: auto;
+  gap: 20px;
+}
+
+.button {
+  height: 50px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 20px;
+  background-color: #2196f3;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-family: -apple-system, BlinkMacSystemFont, 'Open Sans', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  cursor: pointer;
+  // margin-bottom: 50px;
+}

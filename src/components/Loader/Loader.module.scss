@@ -1,0 +1,18 @@
+.loaderWrapper {
+  position: relative;
+  height: 20px;
+
+  .loader {
+    position: absolute !important;
+    overflow: hidden;
+    top: 20px !important;
+  }
+  span {
+    display: inline;
+    padding-bottom: 8px;
+    color: #4a4a4a;
+    font-size: 13px;
+    line-height: 5px;
+    color: #4a4a4a;
+  }
+}

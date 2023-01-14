@@ -1,0 +1,30 @@
+.notFoundMessage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // box-sizing: border-box;
+  background-color: #ffffff;
+  width: 100%;
+  border: #2196f3 1px solid;
+  border-radius: 5px;
+  margin-bottom: 180px;
+
+  span {
+    display: block;
+    padding: 10px 0;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-size: 12px;
+    line-height: 20px;
+    padding-bottom: 50px;
+
+    @media (max-width: 916px) {
+      font-size: 10px;
+      padding: 5px 2px;
+    }
+    @media (max-width: 394px) {
+      font-size: 8px;
+    }
+  }
+}

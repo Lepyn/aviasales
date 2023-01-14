@@ -1,0 +1,41 @@
+.sortButtons {
+  display: flex;
+  background-color: #ffffff;
+  color: #4a4a4a;
+  border-radius: 5px;
+  overflow: hidden;
+  width: 100%;
+  height: max-content;
+  div {
+    width: 33.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-size: 12px;
+    line-height: 20px;
+
+    border: 1px solid #dfe5ec;
+    box-sizing: border-box;
+
+    @media (max-width: 436px) {
+      font-size: 10px;
+    }
+    @media (max-width: 372px) {
+      font-size: 8px;
+      height: 30px;
+    }
+  }
+  :hover {
+    cursor: pointer;
+  }
+
+  .active {
+    background: #2196f3;
+    color: #ffffff;
+  }
+}
