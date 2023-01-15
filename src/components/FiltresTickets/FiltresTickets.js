@@ -14,11 +14,12 @@ const FiltresTickets = (props) => {
 
     const onClickBtn = () => {
       const updateSort = [...sortButtons].map((el) => {
-        if (el.name === name) {
-          el.isActive = true
-        } else {
-          el.isActive = false
-        }
+        // if (el.name === name) {
+        //   el.isActive = true
+        // } else {
+        //   el.isActive = false
+        // }
+        el.isActive = el.name === name
         return el
       })
       updateSortBtn(updateSort)

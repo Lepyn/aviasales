@@ -9,7 +9,7 @@ const TransferList = function (props) {
 
   let countSelectedFilters = 0
 
-  const filters = [...filterItems].map(({ label, name, isCheck }) => {
+  const filters = filterItems.map(({ label, name, isCheck }) => {
     if (isCheck) {
       countSelectedFilters += 1
     }

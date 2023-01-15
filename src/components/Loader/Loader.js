@@ -10,7 +10,7 @@ const Loader = (props) => {
   const [count, setCount] = useState(0)
   useEffect(() => {
     if (!isStop) {
-      setCount(count + 4)
+      setCount((oldCount) => oldCount + 4)
     } else {
       setCount(100)
     }
